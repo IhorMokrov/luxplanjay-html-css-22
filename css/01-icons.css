@@ -22,11 +22,17 @@
 
 .product-actions {
   position: absolute;
-  top: 0;
-  right: 0;
-
-  outline: 3px solid orange;
+  bottom: 50%;
+  left: 0%;
+  transform: translate(0%, 50%);
+  outline: 1px solid orange;
   display: flex;
+  opacity: 0;
+  transition: 500ms opacity linear;
+}
+
+.product:hover .product-actions {
+  opacity: 0.9;
 }
 
 .product-actions .icon {
