@@ -39,3 +39,7 @@
   width: 32px;
   height: 32px;
 }
+
+body {
+  padding-top: 140px;
+}

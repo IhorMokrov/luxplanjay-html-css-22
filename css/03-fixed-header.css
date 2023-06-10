@@ -15,3 +15,7 @@ body {
 p {
   user-select: none;
 }
+
+body {
+  padding-top: 140px;
+}
