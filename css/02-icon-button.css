@@ -11,7 +11,7 @@
   font: inherit;
   cursor: pointer;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -41,7 +41,7 @@
 .btn::after {
   position: absolute;
   top: 50%;
-  left: 30px;
+  /* left: 30px; */
   background-image: url('../images/cat.svg');
 
   transform: translateY(calc(-50% + 35px));
@@ -62,20 +62,58 @@
 }
 
 .btn-1 {
-  cursor: pointer;
-  display: inline-flex;
-  /* width: 160px; */
-  /* height: 40px; */
-  background-color: teal;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 18px;
-  border: none;
-  padding: 10px 30px;
+  position: relative;
 
-  transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 30px;
+  margin: 0;
+
+  font: inherit;
+  color: #fff;
+  cursor: pointer;
+
+  background-color: teal;
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-1:hover {
   background-color: #d87093;
+}
+
+.btn-1::before,
+.btn-1::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+
+  content: '';
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-1::before {
+  background-image: url(../images/smile.svg);
+  background-size: contain;
+}
+
+.btn-1::after {
+  position: absolute;
+  transform: translateY(35px);
+  background-image: url(../images/bird.svg);
+  content: '';
+}
+
+.btn-1:hover::before {
+  transform: translateY(-34px);
+}
+
+.btn-1:hover::after {
+  position: absolute;
+
+  transform: translateY(0%);
 }
