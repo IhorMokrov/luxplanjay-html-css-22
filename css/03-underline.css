@@ -43,3 +43,7 @@
   opacity: 1;
   transform: scaleX(1);
 }
+
+.margined {
+  margin: 60px;
+}
