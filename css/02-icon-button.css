@@ -56,3 +56,26 @@
 .btn:focus {
   background-color: #d87093;
 }
+
+.margined {
+  margin-top: 60px;
+}
+
+.btn-1 {
+  cursor: pointer;
+  display: inline-flex;
+  /* width: 160px; */
+  /* height: 40px; */
+  background-color: teal;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  padding: 10px 30px;
+
+  transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn-1:hover {
+  background-color: #d87093;
+}
