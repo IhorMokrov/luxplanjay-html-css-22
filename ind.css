@@ -1,18 +1,40 @@
-body {
-  display: block;
-  width: 800px;
-  margin-right: auto;
-  margin-left: auto;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
-.js-speaker-form {
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-bottom: 10px;
-  /* display: block; */
-  /* width: 1000px; */
-  /* height: 200px; */
-  background-color: lightcyan;
+body {
+  padding: 5px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
+.form {
+  padding: 20px 20px;
+  margin-right: auto;
+  margin-left: auto;
   outline: 1px solid tomato;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  margin-bottom: 5px;
+}
+
+.form-field input {
+  padding: 10px 20px;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  border-width: 1px;
+  border-color: #2a2a2a;
+  border-radius: 3px;
 }

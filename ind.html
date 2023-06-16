@@ -12,39 +12,29 @@
 
 <body>
 
-    <form class="js-speaker-form">
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name">
-        <br>
-        <label for="tel">Телефон</label>
-        <input type="phone" name="tel" id="tel">
-        <br>
-        <label for="email">Почта</label>
-        <input type="email" name="mail" id="email">
-        <br>
-
-        <div role="group">
-            <input type="checkbox" name="topic" value="html" id="html" />
-            <label for="html">HTML</label>
-
-            <input type="checkbox" name="topic" value="css" id="css" />
-            <label for="css">CSS</label>
-
-            <input type="checkbox" name="topic" value="js" id="js" />
-            <label for="js">JavaScript</label>
+    <form class="form js-speaker-form">
+        <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" placeholder="Иван Иваныч" autofocus>
         </div>
 
-        <div role="group">
-            <input type="radio" name="experience" value="junior" id="junior" />
-            <label for="junior">Junior</label>
-            <input type="radio" name="experience" value="middle" id="middle" />
-            <label for="middle">Middle</label>
-            <input type="radio" name="experience" value="senior" id="senior" />
-            <label for="senior">Senior</label>
+        <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel">
         </div>
 
+        <div class="form-field">
+            <label for="email">Почта</label>
+            <input type="text" name="email" id="email">
+        </div>
 
-        <button type="submit">Submit</button>
+        <h3>Тема доклада</h3>
+        <ul>
+            <li><input type="checkbox" name="topic" value="html" id="html"><label for="html">HTML</label></li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
     </form>
 
 
