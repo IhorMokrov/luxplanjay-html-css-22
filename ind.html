@@ -12,90 +12,13 @@
 
 <body>
 
-    <form class="form js-speaker-form">
-        <div class="form-field">
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name" placeholder="Иван Иваныч">
-        </div>
-
-        <div class="form-field">
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00">
-        </div>
-
-        <div class="form-field">
-            <label for="email">Почта</label>
-            <input type="text" name="email" id="email" placeholder="my@mail.com">
-        </div>
-
-        <div role="group" class="group">
-            <h2>Тема доклада</h2>
-            <ul class="topic-options">
-                <li><input type="checkbox" name="topic" value="html" id="html"><label for="html">HTML</label></li>
-                <li><input type="checkbox" name="topic" value="css" id="css"><label for="css">CSS</label></li>
-                <li><input type="checkbox" name="topic" value="js" id="js"><label for="js">JavaScript</label></li>
-            </ul>
-        </div>
-
-        <div role="group" class="group">
-            <h2>Уровень вашей экспертизы</h2>
-
-            <ul>
-                <li><input type="radio" name="experience" value="junior" id="junior"><label for="junior">Junior</label>
-                </li>
-                <li><input type="radio" name="experience" value="middle" id="middle"><label for="middle">Middle</label>
-                </li>
-                <li><input type="radio" name="experience" value="senior" id="senior"><label for="senior">Senior</label>
-                </li>
-            </ul>
-        </div>
 
 
-        <div class="form-field">
-            <label for="date">Дата доклада</label>
-            <input type="datetime-local" name="date" id="date">
-        </div>
-
-
-        <div class="form-field">
-            <label for="pdf">!Загрузите копию доклада в pdf</label>
-            <input type="file" name="pdf" id="pdf">
-        </div>
-
-
-
-
-
-
-        <div class="form-field">
-            <label for="comment">Оставьте коментарий</label>
-            <textarea name="" id="" cols="30" rows="10" autofocus></textarea>
-        </div>
-
-        <button type="submit">Оставить заявку</button>
-
+    <form>
+        <input type="text" id="name">
+        <label for="name">name</label>
     </form>
 
-
-
-
-
-
-    <script>
-        (() => {
-            document
-                .querySelector('.js-speaker-form')
-                .addEventListener('submit', e => {
-                    e.preventDefault();
-
-                    new FormData(e.currentTarget).forEach((value, name) =>
-                        console.log(`${name}: ${value}`),
-                    );
-
-                    e.currentTarget.reset();
-                });
-        })();
-    </script>
 </body>
 
 </html>
