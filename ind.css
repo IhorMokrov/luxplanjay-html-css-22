@@ -25,6 +25,7 @@ li {
 
 .input {
   height: 60px;
+  padding-left: 40px;
 }
 
 .label {
@@ -61,6 +62,6 @@ li {
   transition: transform 250ms linear;
 }
 
-.form:focus-within ~ .icon {
+.input:focus ~ .icon {
   background-color: teal;
 }
