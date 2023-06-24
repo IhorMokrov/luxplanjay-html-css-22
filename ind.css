@@ -18,3 +18,31 @@ ul {
 li {
   list-style: none;
 }
+
+.container {
+  position: relative;
+}
+
+.input {
+  height: 60px;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+
+  transform: translateY(-50%);
+
+  transition: transform 250ms linear;
+
+  outline: 1px solid tomato;
+}
+
+.input:focus + .label {
+  transform: translateY(-60px);
+}
+
+.input:not(:placeholder-shown) + .label {
+  transform: translateY(-60px);
+}
