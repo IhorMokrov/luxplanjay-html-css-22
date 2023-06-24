@@ -30,7 +30,7 @@ li {
 .label {
   position: absolute;
   top: 50%;
-  left: 20px;
+  left: 40px;
 
   transform: translateY(-50%);
 
@@ -45,4 +45,22 @@ li {
 
 .input:not(:placeholder-shown) + .label {
   transform: translateY(-60px);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+
+  transition: transform 250ms linear;
+}
+
+.form:focus-within ~ .icon {
+  background-color: teal;
 }
