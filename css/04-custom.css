@@ -2,6 +2,10 @@ li {
   margin-bottom: 10px;
 }
 
+form {
+  margin-bottom: 40px;
+}
+
 .field {
   display: flex;
   align-items: center;
@@ -52,4 +56,42 @@ li {
 
 .checkbox:checked ~ .label {
   transform: translateX(20px);
+}
+
+/* ................................ */
+
+.mud-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.mud-icon {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid #2a2a2a;
+  border-radius: 3px;
+
+  background-image: url(../img/full-check.svg);
+}
+
+.mud-input:checked ~ .mud-icon {
+  background-color: #2a2a2a;
+  background-image: url(../img/full-check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  border: 1px solid #2a2a2a;
+}
+
+.mud-label {
+  display: flex;
+  align-items: center;
 }
