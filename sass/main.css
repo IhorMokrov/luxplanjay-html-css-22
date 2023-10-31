@@ -298,12 +298,4 @@ body.modal-open {
 
 .mobile-menu.is-open .content {
   transform: translateX(0);
-}
-
-.my-func {
-  width: 20px;
-  height: 10px;
-  border: 1px solid green;
-  outline: 1px solid red;
-  background-color: black;
 }/*# sourceMappingURL=main.css.map */
