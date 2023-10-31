@@ -1,107 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Отзывчивая вёрстка</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <div class="page-header">
-      <div class="container">
-        <nav class="nav">
-          <a class="company-logo" href="">Логотип</a>
 
-          <button
-            type="button"
-            class="menu-button"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
-          >
-            <svg
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use class="icon-cross" href="./img/sprite.svg#cross"></use>
-              <use class="icon-menu" href="./img/sprite.svg#menu"></use>
-            </svg>
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Отзывчивая вёрстка</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
 
-          <div class="menu-container" id="menu-container" data-menu>
-            <div class="navigation"></div>
-            <div class="contacts"></div>
-          </div>
-        </nav>
-      </div>
+<body>
+  <div class="page-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="company-logo" href="">Логотип</a>
+
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./img/sprite.svg#cross"></use>
+            <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <div class="navigation"></div>
+          <div class="contacts"></div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <button type="button" data-modal-open>Открыть</button>
     </div>
 
-    <main>
+    <section class="section features">
       <div class="container">
-        <button type="button" data-modal-open>Открыть</button>
+        <a href="./ind-test.html">
+          <h2 class="section-title">go to ind-test</h2>
+        </a>
+        <h2 class="section-title">Заголовок первой секции</h2>
+
+        <ul class="features-set">
+          <li class="features-item">1</li>
+          <li class="features-item">2</li>
+          <li class="features-item">3</li>
+          <li class="features-item">4</li>
+          <li class="features-item">5</li>
+          <li class="features-item">6</li>
+        </ul>
       </div>
+    </section>
 
-      <section class="section features">
-        <div class="container">
-          <h2 class="section-title">Заголовок первой секции</h2>
+    <section class="section reviews">
+      <div class="container">
+        <h2 class="section-title">Заголовок второй секции</h2>
 
-          <ul class="features-set">
-            <li class="features-item">1</li>
-            <li class="features-item">2</li>
-            <li class="features-item">3</li>
-            <li class="features-item">4</li>
-            <li class="features-item">5</li>
-            <li class="features-item">6</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section reviews">
-        <div class="container">
-          <h2 class="section-title">Заголовок второй секции</h2>
-
-          <ul class="reviews-set">
-            <li class="reviews-item">1</li>
-            <li class="reviews-item">2</li>
-            <li class="reviews-item">3</li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" data-modal-close>Закрыть</button>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-          facilis quas unde iusto excepturi, doloremque sed cum est quis modi ex
-          nihil natus ab impedit quisquam officia, suscipit dignissimos sit,
-          autem velit? Praesentium ipsum eligendi molestias a corporis vitae
-          autem dolores accusamus at eius voluptate, harum amet iusto deserunt
-          illum!
-        </p>
-        <p>
-          Officia voluptatibus voluptate aut tempora voluptas, repellat quos,
-          eius officiis consequatur suscipit molestiae ipsum, ut voluptatem
-          impedit. Nihil sint possimus obcaecati nulla tenetur quidem est,
-          molestias nobis facilis laudantium provident ab quos molestiae
-          voluptatibus necessitatibus nisi rem omnis? Mollitia, id corporis!
-          Reprehenderit error rerum assumenda! Dolorem sunt consequatur ad
-          eligendi.
-        </p>
+        <ul class="reviews-set">
+          <li class="reviews-item">1</li>
+          <li class="reviews-item">2</li>
+          <li class="reviews-item">3</li>
+        </ul>
       </div>
+    </section>
+  </main>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" data-modal-close>Закрыть</button>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+        facilis quas unde iusto excepturi, doloremque sed cum est quis modi ex
+        nihil natus ab impedit quisquam officia, suscipit dignissimos sit,
+        autem velit? Praesentium ipsum eligendi molestias a corporis vitae
+        autem dolores accusamus at eius voluptate, harum amet iusto deserunt
+        illum!
+      </p>
+      <p>
+        Officia voluptatibus voluptate aut tempora voluptas, repellat quos,
+        eius officiis consequatur suscipit molestiae ipsum, ut voluptatem
+        impedit. Nihil sint possimus obcaecati nulla tenetur quidem est,
+        molestias nobis facilis laudantium provident ab quos molestiae
+        voluptatibus necessitatibus nisi rem omnis? Mollitia, id corporis!
+        Reprehenderit error rerum assumenda! Dolorem sunt consequatur ad
+        eligendi.
+      </p>
     </div>
+  </div>
 
-    <!-- <div class="mobile-menu" >
+  <!-- <div class="mobile-menu" >
       <div class="content"></div>
     </div> -->
 
-    <script src="./js/menu.js"></script>
-    <script src="./js/modal.js"></script>
-  </body>
+  <script src="./js/menu.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
 </html>

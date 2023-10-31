@@ -33,3 +33,23 @@
 .mobile-menu.is-open .content {
   transform: translateX(0);
 }
+
+.my-func {
+  width: 20px;
+  height: 10px;
+  border: 1px solid green;
+  outline: 1px solid red;
+  background-color: black;
+}
+
+// @mixin myFunc($val1, $val2) {
+//   @each $key in $val1 {
+//     .#{$val2} {
+//       color: $val1;
+//     }
+//   }
+// }
+
+// $colors: "red", "green", "blue";
+
+// @include myFunc($colors, ".my-colors");
